@@ -1,0 +1,43 @@
+#+title:Episteme Elisp Support
+* boilerplate
+** var-or
+Return value symbol named =TARGET= if bound, or =DEFAULT=
+#+begin_src emacs-lisp
+  (defun apop--var-or (target default)
+    (if (boundp target)
+        (eval target)
+      default))
+#+end_src
+
+** kbd
+Return an =apop-prefix='ed =(kbd)= binding of =KEY=
+#+begin_src emacs-lisp
+  (defun apop--kbd (key)
+    (kbd (format "%s %s" apop-prefix key)))
+#+end_src
+
+* settings
+** username
+The username identifying you in marks and other places
+#+begin_src emacs-lisp
+  (setq apop-username (var-or 'apop-username user-login-name))
+#+end_src
+
+** apop key prefix
+The binding prefix for any interactive apop commands, like =apop-mark-this=
+#+begin_src emacs-lisp
+  (setq apop-prefix (apop--var-or 'apop-prefix "C-c a"))
+#+end_src
+
+* api
+** mark-this
+Add your =apop-username= to a heading's =markedby= property to indicate you've read a
+book, seen a movie, watched a lecture, etc.
+#+begin_src emacs-lisp
+  (defun apop-mark-this ()
+    (interactive)
+    (org-entry-add-to-multivalued-property nil "markedby" apop-username))
+  (define-key org-mode-map (apop--kbd "r") 'apop-mark-this)
+#+end_src
+
+
