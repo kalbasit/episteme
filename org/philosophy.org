@@ -1,4 +1,4 @@
-#+title: episteme
+#+title: western philosophy
 #+description: Knowledge-base of the ##apoptosis community on Freenode
 #+language: en
 #+startup: overview indent align
