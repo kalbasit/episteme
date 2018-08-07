@@ -9,3 +9,15 @@ refer to knowledge, science or understanding, and which comes from the verb
 
 This repository contains [[https://orgmode.org/manual/Search-options.html#Search-options][org-mode]] files making up a collaborative knowledge-base of
 the ##apoptosis community on Freenode.
+
+** Using =support.org=
+
+You can either:
+
+=M-x= elisp:org-babel-load-file and select file:support.org
+
+Or add the same to your init.el:
+
+#+begin_src emacs-lisp
+  (org-babel-load-file "~/src/apoptosis/episteme/support.org")
+#+end_src
