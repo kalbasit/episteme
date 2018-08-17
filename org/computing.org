@@ -195,13 +195,17 @@ There needs to be at least three partitions:
 #+end_src
 
 
-
 *** Home-manager
 **** Scraps
 ***** Activation Packages
-Uses a directed graph to sort activation packages:
+First import the dag module:
 #+begin_src nix
-  home.activation.ssh-personal = dag.entryAfter ["installPackages"] ''
+  with import <home-manager/modules/lib/dag.nix> { inherit lib; };
+#+end_src
+
+Then add a new entry:
+#+begin_src nix
+  home.activation.ssh-personal = dagEntryAfter ["installPackages"] ''
     chmod 400 /Users/dustinlacewell/.ssh/personal
   '';
 #+end_src
