@@ -11,6 +11,18 @@
 #+html_head: <script type="text/javascript" src="https://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.js"></script>
 #+html_head: <script type="text/javascript" src="https://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
 #+html_head: <link rel="stylesheet" type="text/css" href="/episteme/extra.css"/>
+
+* Hardware
+** Keyboards
+*** Atreus
+https://github.com/technomancy/atreus
+*** Diverge
+https://unikeyboard.io/product/diverge/
+*** Iris
+https://keeb.io/products/iris-keyboard-split-ergonomic-keyboard?variant=8034004860958
+*** Mitosis
+https://flashquark.com/product/gb-mitosis-wireless-split-ergonomic-keyboard-w-acrylic-case/
+
 * Software
 ** Editors
 *** Emacs
