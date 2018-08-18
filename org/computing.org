@@ -24,6 +24,10 @@ https://keeb.io/products/iris-keyboard-split-ergonomic-keyboard?variant=80340048
 https://flashquark.com/product/gb-mitosis-wireless-split-ergonomic-keyboard-w-acrylic-case/
 *** ErgoPro
 https://matias.ca/ergopro/pc/
+*** Ultimate Hacking Keyboard
+https://ultimatehackingkeyboard.com/
+*** Keyboardio
+https://shop.keyboard.io/
 * Software
 ** Editors
 *** Emacs
