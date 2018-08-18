@@ -22,7 +22,8 @@ https://unikeyboard.io/product/diverge/
 https://keeb.io/products/iris-keyboard-split-ergonomic-keyboard?variant=8034004860958
 *** Mitosis
 https://flashquark.com/product/gb-mitosis-wireless-split-ergonomic-keyboard-w-acrylic-case/
-
+*** ErgoPro
+https://matias.ca/ergopro/pc/
 * Software
 ** Editors
 *** Emacs
